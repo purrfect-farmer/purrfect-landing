@@ -55,10 +55,7 @@ export default function Hero() {
         </div>
         <div className="relative">
           <div className="lg:absolute inset-0 flex flex-col items-center justify-center">
-            <img
-              src={HeroImage}
-              className="rounded-xl max-lg:max-w-[520px] max-h-full"
-            />
+            <img src={HeroImage} className="rounded-xl w-[520px] max-h-full" />
           </div>
         </div>
       </div>

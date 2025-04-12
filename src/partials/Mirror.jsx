@@ -40,7 +40,7 @@ export default function Mirror() {
       <div className="lg:row-start-1 lg:col-start-1">
         <img
           src={MirrorImageIcon}
-          className="ring-4 ring-orange-300 w-[640px]"
+          className="ring-4 ring-orange-300 rounded-sm w-[640px]"
         />
       </div>
     </ContainerGrid>

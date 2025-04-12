@@ -17,7 +17,7 @@ export default function Hero() {
           </h1>
 
           <p className="font-thin max-lg:max-w-96 text-center text-2xl lg:text-3xl">
-            Automate Telegram Mini-Apps easily, combined with mirrored controls.
+            Automate Telegram Mini-Apps easily with an advance tool.
           </p>
 
           <div className="flex">

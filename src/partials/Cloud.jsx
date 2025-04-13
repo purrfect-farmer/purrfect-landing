@@ -1,5 +1,5 @@
 import CheckList from "@/components/CheckList";
-import CloudImageIcon from "@/assets/images/cloud.png?format=webp";
+import CloudImage from "@/assets/images/cloud.png?format=webp";
 import ContainerGrid from "@/components/ContainerGrid";
 
 export default function Cloud() {
@@ -9,6 +9,7 @@ export default function Cloud() {
         <h2 className="font-turret-road text-3xl lg:text-4xl text-orange-500">
           Cloud
         </h2>
+
         <p>
           Automated Cloud Farming for Mini-Apps, sync once and let the Cloud
           handle the rest.
@@ -17,6 +18,11 @@ export default function Cloud() {
         <p>
           Purrfect Cloud requires a monthly subscription when using the Official
           Servers.
+        </p>
+
+        <p>
+          Every Cloud User gets full access to all available Cloud Farmers,
+          dedicated Proxy IP and Cloud Sessions to persist farming.
         </p>
 
         <CheckList
@@ -31,7 +37,7 @@ export default function Cloud() {
       </div>
 
       <div>
-        <img src={CloudImageIcon} className="w-[640px]" />
+        <img src={CloudImage} className="w-[640px]" />
       </div>
     </ContainerGrid>
   );

@@ -1,13 +1,13 @@
 import CheckList from "@/components/CheckList";
 import ContainerGrid from "@/components/ContainerGrid";
 import LinkButton from "@/components/LinkButton";
-import MirrorImageIcon from "@/assets/images/mirror.png?format=webp";
+import MirrorImage from "@/assets/images/mirror.png?format=webp";
 import { HiOutlineArrowDownCircle } from "react-icons/hi2";
 
 export default function Mirror() {
   return (
     <ContainerGrid className="mx-auto p-10 gap-10">
-      <div className="flex flex-col gap-2 lg:col-start-2">
+      <div className="flex flex-col gap-2">
         <h2 className="font-turret-road text-3xl lg:text-4xl text-orange-500">
           Mirror
         </h2>
@@ -16,7 +16,15 @@ export default function Mirror() {
           seamlessly.
         </p>
 
-        <p>Purrfect Mirror Server needs to be installed to use Mirror.</p>
+        <p>
+          Purrfect Mirror Server needs to be installed to use Mirror. This is a
+          separate application for Linux / MacOS / Windows.
+        </p>
+
+        <p>
+          Mirror allows you to e.g synchronize settings, start or stop farming
+          and more among multiple accounts.
+        </p>
 
         <CheckList
           items={[
@@ -37,9 +45,9 @@ export default function Mirror() {
         </div>
       </div>
 
-      <div className="lg:row-start-1 lg:col-start-1">
+      <div>
         <img
-          src={MirrorImageIcon}
+          src={MirrorImage}
           className="ring-4 ring-orange-300 rounded-sm w-[640px]"
         />
       </div>

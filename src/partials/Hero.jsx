@@ -3,13 +3,14 @@ import ContainerGrid from "@/components/ContainerGrid";
 import HeroImage from "@/assets/images/hero.png?format=webp";
 import LinkButton from "@/components/LinkButton";
 import { FaChrome, FaGithub } from "react-icons/fa6";
+import { PiMouseScroll } from "react-icons/pi";
 
 const HeroButton = LinkButton;
 
 export default function Hero() {
   return (
-    <div className="bg-orange-100 flex justify-center min-h-dvh">
-      <ContainerGrid>
+    <div className="bg-orange-100 flex flex-col  min-h-dvh">
+      <ContainerGrid className="grow">
         <div className="flex flex-col gap-4 p-10 items-center  justify-center">
           <img src={AppIcon} className="h-28 lg:h-36" />
           <h1 className="font-turret-road text-3xl lg:text-4xl text-orange-500 text-center">
@@ -39,10 +40,17 @@ export default function Hero() {
         </div>
         <div className="relative">
           <div className="lg:absolute inset-0 flex flex-col items-center justify-center">
-            <img src={HeroImage} className="rounded-xl w-[520px] max-h-full" />
+            <img
+              src={HeroImage}
+              className="rounded-xl w-[520px] object-contain max-h-full"
+            />
           </div>
         </div>
       </ContainerGrid>
+
+      <div className="p-10 flex justify-center shrink-0">
+        <PiMouseScroll className="size-10 animate-bounce text-orange-500" />
+      </div>
     </div>
   );
 }

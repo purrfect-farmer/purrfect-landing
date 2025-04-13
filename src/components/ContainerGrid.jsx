@@ -5,7 +5,7 @@ export default function ContainerGrid(props) {
     <div
       {...props}
       className={cn(
-        "grid grid-cols-1 lg:grid-cols-2 max-w-5xl",
+        "w-full mx-auto grid grid-cols-1 lg:grid-cols-2 max-w-5xl",
         props.className
       )}
     />

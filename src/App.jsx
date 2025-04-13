@@ -1,6 +1,7 @@
 import Cloud from "./partials/Cloud";
 import Farmers from "./partials/Farmers";
 import Features from "./partials/Features";
+import Footer from "./partials/Footer";
 import Hero from "./partials/Hero";
 import Mirror from "./partials/Mirror";
 import Mobile from "./partials/Mobile";
@@ -18,6 +19,7 @@ function App() {
       <Toolbar />
       <Mobile />
       <Cloud />
+      <Footer />
     </>
   );
 }

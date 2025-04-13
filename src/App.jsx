@@ -3,7 +3,9 @@ import Farmers from "./partials/Farmers";
 import Features from "./partials/Features";
 import Hero from "./partials/Hero";
 import Mirror from "./partials/Mirror";
+import Mobile from "./partials/Mobile";
 import SidePanel from "./partials/SidePanel";
+import Toolbar from "./partials/Toolbar";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Farmers />
       <Mirror />
       <SidePanel />
+      <Toolbar />
+      <Mobile />
       <Cloud />
     </>
   );

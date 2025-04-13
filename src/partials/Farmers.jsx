@@ -10,8 +10,8 @@ export default function Farmers() {
           Farmers
         </h2>
         <p>
-          20+ Farmers included, with support for running multiple farmers at
-          once.
+          20+ dedicated Farmers included, with support for running multiple
+          farmers at once.
         </p>
 
         <p>

@@ -1,6 +1,7 @@
-import { FaCode, FaGithub, FaTelegram } from "react-icons/fa6";
-import { cn } from "@/lib/utils";
+import AppIcon from "@/assets/images/icon-unwrapped-cropped.png?format=webp&h=480";
+import { FaChrome, FaCode, FaGithub, FaTelegram } from "react-icons/fa6";
 import { HiOutlineChatBubbleBottomCenter } from "react-icons/hi2";
+import { cn } from "@/lib/utils";
 
 const FooterButton = ({
   icon: Icon, // eslint-disable-line
@@ -10,21 +11,33 @@ const FooterButton = ({
     {...props}
     target="_blank"
     className={cn(
-      "bg-orange-200",
+      "bg-neutral-800",
       "p-3 rounded-full",
       "inline-flex items-center justify-center gap-2",
       props.className
     )}
   >
-    <Icon className="text-orange-500 w-5 h-5" />
+    <Icon className="text-orange-500 size-4" />
   </a>
 );
 
 export default function Footer() {
   return (
-    <div className="p-10">
-      <div className=" rounded-2xl p-4 max-w-5xl mx-auto flex flex-col gap-4">
-        <div className="flex justify-center items-center flex-wrap gap-4">
+    <div className="p-4">
+      <div className="max-w-5xl mx-auto flex flex-col gap-4">
+        <img src={AppIcon} className="h-28 mx-auto" />
+        <div
+          className={cn(
+            "flex justify-center items-center",
+            "flex-wrap gap-2 bg-black p-2 rounded-full mx-auto"
+          )}
+        >
+          <FooterButton
+            href={import.meta.env.VITE_APP_TELEGRAM_CHANNEL}
+            icon={FaChrome}
+            title="Extension"
+          />
+
           <FooterButton
             href={import.meta.env.VITE_APP_DEV}
             icon={FaCode}
@@ -49,6 +62,7 @@ export default function Footer() {
             title="GitHub"
           />
         </div>
+        <div className="text-center">&copy; Purrfect Farmer</div>
       </div>
     </div>
   );

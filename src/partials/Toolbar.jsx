@@ -13,7 +13,7 @@ export default function Toolbar() {
 
         <p>
           The toolbar complements the farmer, it can be used for airdrops
-          without dedicated a farmer.
+          without a dedicated farmer.
         </p>
 
         <CheckList

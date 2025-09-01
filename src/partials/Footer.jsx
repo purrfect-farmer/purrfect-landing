@@ -33,7 +33,7 @@ export default function Footer() {
           )}
         >
           <FooterButton
-            href={import.meta.env.VITE_APP_TELEGRAM_CHANNEL}
+            href={import.meta.env.VITE_APP_GITHUB_RELEASE}
             icon={FaChrome}
             title="Extension"
           />

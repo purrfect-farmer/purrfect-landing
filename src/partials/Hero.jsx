@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 gap-2">
               <HeroButton
                 icon={FaChrome}
-                href={import.meta.env.VITE_APP_TELEGRAM_CHANNEL}
+                href={import.meta.env.VITE_APP_GITHUB_RELEASE}
               >
                 Get Extension
               </HeroButton>

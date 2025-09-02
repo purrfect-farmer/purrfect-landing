@@ -38,9 +38,7 @@ jobs:
           echo "homepage_url=$url" >> $GITHUB_OUTPUT
 
       - name: Build
-        env:
-          BASE_URL: ${{ steps.pages_url.outputs.homepage_url }}
-        run: pnpm run build
+        run: pnpm run build --base=${{ steps.pages_url.outputs.homepage_url }}
 
       - name: Setup 404 page
         run: cp dist/index.html dist/404.html

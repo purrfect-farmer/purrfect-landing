@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
 
-export default function ContainerGrid(props) {
+export default function SectionHeading({ ...props }) {
   return (
-    <section
+    <h2
       {...props}
       className={cn(
-        "w-full mx-auto grid grid-cols-1 lg:grid-cols-2 max-w-5xl",
+        "font-turret-road text-3xl lg:text-4xl text-orange-500",
         props.className
       )}
     />

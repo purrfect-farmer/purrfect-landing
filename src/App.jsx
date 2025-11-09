@@ -7,6 +7,7 @@ import Mirror from "./partials/Mirror";
 import Mobile from "./partials/Mobile";
 import SidePanel from "./partials/SidePanel";
 import Toolbar from "./partials/Toolbar";
+import Whiskers from "./partials/Whiskers";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Toolbar />
       <Mobile />
       <Cloud />
+      <Whiskers />
       <Footer />
     </>
   );

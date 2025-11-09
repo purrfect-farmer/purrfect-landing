@@ -10,7 +10,7 @@ const LinkButton = ({
     target="_blank"
     className={cn(
       "bg-orange-200",
-      "p-2 px-4 rounded-xl",
+      "p-2 px-4 rounded-full",
       "inline-flex items-center justify-center gap-2",
       props.className
     )}

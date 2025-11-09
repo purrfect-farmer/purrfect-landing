@@ -1,14 +1,13 @@
 import CheckList from "@/components/CheckList";
 import CloudImage from "@/assets/images/cloud.png?format=webp";
 import ContainerGrid from "@/components/ContainerGrid";
+import SectionHeading from "@/components/SectionHeading";
 
 export default function Cloud() {
   return (
     <ContainerGrid className="mx-auto p-10 gap-10">
       <div className="flex flex-col gap-2">
-        <h2 className="font-turret-road text-3xl lg:text-4xl text-orange-500">
-          Cloud
-        </h2>
+        <SectionHeading>Cloud</SectionHeading>
 
         <p>
           Automated Cloud Farming for Mini-Apps, sync once and let the Cloud

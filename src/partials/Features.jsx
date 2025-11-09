@@ -1,3 +1,4 @@
+import SectionHeading from "@/components/SectionHeading";
 import { cn } from "@/lib/utils";
 
 export default function Features() {
@@ -9,9 +10,7 @@ export default function Features() {
         "text-center"
       )}
     >
-      <h2 className="font-turret-road text-3xl lg:text-4xl text-orange-500">
-        Features
-      </h2>
+      <SectionHeading>Features</SectionHeading>
       <p>
         Purrfect Farmer is an advance Telegram Mini-Apps automation tool, it's
         packed with numerous features that makes farming airdrops easy.

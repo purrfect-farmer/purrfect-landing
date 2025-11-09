@@ -1,14 +1,13 @@
 import CheckList from "@/components/CheckList";
 import ContainerGrid from "@/components/ContainerGrid";
 import MobileImage from "@/assets/images/mobile.png?format=webp";
+import SectionHeading from "@/components/SectionHeading";
 
 export default function Mobile() {
   return (
     <ContainerGrid className="mx-auto p-10 gap-10">
       <div className="flex flex-col justify-center gap-2 lg:col-start-2">
-        <h2 className="font-turret-road text-3xl lg:text-4xl text-orange-500">
-          Mobile
-        </h2>
+        <SectionHeading>Mobile</SectionHeading>
         <p>
           Purrfect Farmer can also be installed on Mobile Browsers with Chrome
           Extensions support.

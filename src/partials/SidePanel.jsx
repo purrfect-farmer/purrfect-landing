@@ -1,14 +1,13 @@
 import CheckList from "@/components/CheckList";
 import ContainerGrid from "@/components/ContainerGrid";
 import SidePanelImage from "@/assets/images/side-panel.png?format=webp";
+import SectionHeading from "@/components/SectionHeading";
 
 export default function SidePanel() {
   return (
     <ContainerGrid className="mx-auto p-10 gap-10">
       <div className="flex flex-col gap-2 lg:col-start-2">
-        <h2 className="font-turret-road text-3xl lg:text-4xl text-orange-500">
-          Side Panel
-        </h2>
+        <SectionHeading>Side Panel</SectionHeading>
         <p>
           Enabling the farmer inside the side-panel allows you to farm while
           doing other tasks.
